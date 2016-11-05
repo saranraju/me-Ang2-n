@@ -1,12 +1,5 @@
 #!/usr/bin/env node
 "use strict";
-
-//module dependencies.
-/*var app = require("../app");
-var debug = require("debug")("express:server");
-var http = require("http");
-var config = require('../config.json');*/
-
 const debug = require("debug")("express:server");
 import app from '../app';
 import http from 'http';
