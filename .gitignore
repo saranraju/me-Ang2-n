@@ -38,4 +38,7 @@ jspm_packages
 
 config.json
 .idea/
+
+# Grunt files
 public
+build
