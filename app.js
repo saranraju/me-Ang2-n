@@ -23,11 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
  * Routes
  */
 var route_arr = ['index'];
-if (app.get('env')=='dev') {
-  // try new things, keep production lighter
-  route_arr.push('_mock');
-}
-for (i in route_arr) {
+for (var i in route_arr) {
   app.use('/'+route_arr[i],require('./routes/'+route_arr[i]));
 }
 
